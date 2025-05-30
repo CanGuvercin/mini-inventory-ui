@@ -1,42 +1,90 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #ffffff;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
   padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+form {
+  margin-bottom: 2rem;
+  background-color: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #f0f0f0;
 }
 
-.card {
-  padding: 2em;
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+button:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2a2a2a;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+th {
+  background-color: #333;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #3a3a3a;
+}
+
+.actions button {
+  margin-right: 0.5rem;
+  background-color: #007bff;
+}
+
+.actions button:last-child {
+  background-color: #f44336;
 }

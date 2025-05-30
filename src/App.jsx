@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import ItemTable from "./components/ItemTable";
 import ItemForm from './components/ItemForm';
+import './App.css';
 
 function App() {
   const [items, setItems] = useState([]);
@@ -36,7 +37,7 @@ function App() {
         selectedItem={selectedItem}
         clearSelection={clearSelection}
       />
-      <div style={{ padding: '2rem' }}>
+      <div className='container' style={{ padding: '2rem' }}>
         <h1>Mini Inventory</h1>
         <ItemTable
           items={items}
